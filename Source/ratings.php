@@ -190,7 +190,8 @@ class RabidRatings {
 		if ($ratablesFound != true) { mysql_query($SQL_CREATE_RATABLES); }
 		if ($ratingsFound  != true) { mysql_query($SQL_CREATE_RATINGS);  }
 	}
-
+// algo no esta funcionando 
+	
 	function loadRating($ratableKey) {
 		if (is_numeric($ratableKey)) $crit = "$this->ratables.id"; 
 		else $crit = 'ratableKey';
